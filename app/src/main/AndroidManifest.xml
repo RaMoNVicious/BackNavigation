@@ -11,30 +11,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BackNavigation"
         tools:targetApi="31">
-
         <activity
-            android:name=".DonutActivity"
-            android:label="@string/donut_name"
-            android:parentActivityName=".MainActivity"
-            android:exported="false">
-
+            android:name=".IceCreamActivity"
+            android:exported="false"
+            android:label="@string/icecream_name"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
-
         </activity>
-
+        <activity
+            android:name=".FroyoActivity"
+            android:exported="false"
+            android:label="@string/froyo_name"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".DonutActivity"
+            android:exported="false"
+            android:label="@string/donut_name"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
     </application>
 
 </manifest>

@@ -19,8 +19,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, DonutActivity.class));
                 break;
             case R.id.btn_froyo:
+                startActivity(new Intent(this, FroyoActivity.class));
                 break;
             case R.id.btn_icecream:
+                startActivity(new Intent(this, IceCreamActivity.class));
                 break;
         }
     }
